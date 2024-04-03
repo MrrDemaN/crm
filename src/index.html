@@ -16,7 +16,79 @@
   <body>
     <div class="container">
       <div class="dashboard">
-        <div class="dashboard__aside">ffsdf</div>
+        <div class="dashboard__aside">
+          <div class="dashboard__aside-title">
+            <div class="mr-2">
+              <img src="img/setting1.svg" alt="setting" />
+            </div>
+            <div class="flex items-baseline">
+              Dashboard
+              <p class="dashboard__aside-version">v.01</p>
+            </div>
+          </div>
+          <ul class="dashboard__aside-list">
+            <li>
+              <a href="#">
+                <img src="img/key-square.svg" alt="Dashboard" />
+                <span> Dashboard </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/3d-square 1.svg" alt="Product" />
+                <span> Product </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12L10 8L6 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </li>
+    
+            <li class="current">
+              <a href="#">
+                <img src="img/user-square 1.svg" alt="Customers" />
+                <span> Customers </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12L10 8L6 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/wallet-money 2.svg" alt="Income" />
+                <span> Income </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12L10 8L6 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/discount-shape 1.svg" alt="Promote" />
+                <span> Promote </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12L10 8L6 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/message-question 1.svg" alt="Help" />
+                <span> Help </span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12L10 8L6 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+
+        <div class="dashboard__aside-bottom">
+          <div class="mr-3"><img src="img/evano.png" alt="user"></div>
+          <div>
+            Evano
+            <div class="text-xs text-[#757575]" > Project Manager</div>
+          </div>
+        </div>
+        </div>
         <div class="dashboard__content">
           <div class="dashboard__hello">Hello Evano 👋🏼,</div>
           <div class="dashboard__table">
@@ -27,7 +99,7 @@
               </div>
               <div class="dashboard__search">
                 <button>
-                  <img src="img/search 1.svg" alt="search" />
+                  <img src="img/search1.svg" alt="search" />
                 </button>
                 <input type="text" placeholder="Search" />
               </div>
@@ -40,23 +112,23 @@
               <div class="country">Country</div>
               <div class="status">Status</div>
             </div>
-            <div>
+            <div class="dashboard__table-list">
               <div class="dashboard__table-item">
                 <div class="name">Jane Cooper</div>
                 <div class="company">Microsoft</div>
                 <div class="phone">(225) 555-0118</div>
                 <div class="email">jane@microsoft.com</div>
                 <div class="country">United States</div>
-                <div class="status">Status</div>
+                <div class="status status-active">Active</div>
               </div>
-   
+
               <div class="dashboard__table-item">
                 <div class="name">Floyd Miles</div>
                 <div class="company">Yahoo</div>
                 <div class="phone">(205) 555-0100</div>
                 <div class="email">floyd@yahoo.com</div>
                 <div class="country">Kiribati</div>
-                <div class="status">Status</div>
+                <div class="status status-inactive">Inactive</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Ronald Richards</div>
@@ -64,7 +136,7 @@
                 <div class="phone">(302) 555-0107</div>
                 <div class="email">ronald@adobe.com</div>
                 <div class="country">Israel</div>
-                <div class="status">Status</div>
+                <div class="status status-inactive">Inactive</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Marvin McKinney</div>
@@ -72,7 +144,7 @@
                 <div class="phone">(252) 555-0126</div>
                 <div class="email">marvin@tesla.com</div>
                 <div class="country">Iran</div>
-                <div class="status">Status</div>
+                <div class="status status-active">Active</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Jerome Bell</div>
@@ -80,7 +152,7 @@
                 <div class="phone">(629) 555-0129</div>
                 <div class="email">jerome@google.com</div>
                 <div class="country">Réunion</div>
-                <div class="status">Status</div>
+                <div class="status status-active">Active</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Kathryn Murphy</div>
@@ -88,7 +160,7 @@
                 <div class="phone">(406) 555-0120</div>
                 <div class="email">kathryn@microsoft.com</div>
                 <div class="country">Curaçao</div>
-                <div class="status">Status</div>
+                <div class="status status-active">Active</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Jacob Jones</div>
@@ -96,7 +168,7 @@
                 <div class="phone">(208) 555-0112</div>
                 <div class="email">jacob@yahoo.com</div>
                 <div class="country">Brazil</div>
-                <div class="status">Status</div>
+                <div class="status status-active">Active</div>
               </div>
               <div class="dashboard__table-item">
                 <div class="name">Kristin Watson</div>
@@ -104,7 +176,31 @@
                 <div class="phone">(704) 555-0127</div>
                 <div class="email">kristin@facebook.com</div>
                 <div class="country">Åland Islands</div>
-                <div class="status">Status</div>
+                <div class="status status-inactive">Inactive</div>
+              </div>
+            </div>
+            <div class="dashboard__table-bottom">
+              <div class="font-medium text-[#B5B7C0]">
+                Showing data 1 to 8 of 256K entries
+              </div>
+              <div class="pagination">
+                <a href="#" class="pagination__item"><</a>
+                <a href="#" class="pagination__item pagination__item-curent"
+                  >1</a
+                >
+
+                <a href="#" class="pagination__item">2</a>
+
+                <a href="#" class="pagination__item">3</a>
+
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item pagination__item-dotted"
+                  >...</a
+                >
+
+                <a href="#" class="pagination__item">40</a>
+
+                <a href="#" class="pagination__item">></a>
               </div>
             </div>
           </div>
