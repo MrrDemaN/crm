@@ -1,184 +1,141 @@
-//All styles can be added here.
-.hero-heading {
-  @apply mb-10 text-4xl font-medium text-white;
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #fafbff;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-.instructions {
-  .sub-title {
-    @apply mb-5 border-b-2 border-gray-400 pb-2 text-xl font-medium text-gray-900;
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-    & + p {
-      @apply mb-3;
+.dashboard {
+  @apply flex min-h-screen w-full;
+
+  &__aside {
+    flex: 0 0 306px;
+    max-width: 306px;
+    width: 100%;
+    padding: 36px 28px 76px;
+    background-color: #fff;
+    box-shadow: 0px 10px 60px 0px #e2ecf980;
+  }
+
+  &__content {
+    padding: 41px 95px 41px 71px;
+    flex: 1;
+  }
+  &__hello {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 51px;
+  }
+
+  &__search {
+    max-width: 216px;
+    width: 100%;
+    background-color: #f9fbff;
+    padding: 7px 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    button {
+      margin-right: 4px;
+      flex: 0 0 24px;
+      width: 24px;
+    }
+
+    input {
+      max-width: calc(100% - 24px);
+      width: 100%;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.01em;
+      padding: 4px;
+
+      &::placeholder {
+        color: #b5b7c0;
+      }
     }
   }
-  .code {
-    @apply block w-full rounded border bg-gray-100 px-4 py-5 font-mono text-sm leading-normal text-gray-700 shadow;
 
-    &.pre {
-      @apply whitespace-pre-wrap;
+  &__table {
+    padding: 30px 40px 40px 38px;
+    box-shadow: 0px 10px 60px 0px #e2ecf980;
+    background-color: #fff;
+    border-radius: 30px;
+    &-title {
+      @apply flex items-center justify-between;
+      margin-bottom: 40px;
     }
 
-    em {
-      @apply opacity-75;
+    &-head {
+      display: flex;
+      font-weight: 500;
+      color: #b5b7c0;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 14px;
+      margin-left: -38px;
+      margin-right: -40px;
+      padding-left: 38px;
+      padding-right: 40px;
+      margin-bottom: 20px;
+    }
+
+    &-item{
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: #292D32;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eeeeee;
+
+    }
+
+    .title-all {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: -0.01em;
+      color: #000;
+      margin-bottom: 7px;
+    }
+    .title-active {
+      color: #16c098;
+    }
+
+    .name {
+      flex: 0 0 19%;
+    }
+    .company {
+      flex: 0 0 15%;
+    }
+    .phone {
+      flex: 0 0 17%;
+    }
+    .email {
+      flex: 0 0 23%;
+    }
+    .country {
+      flex: 0 0 15%;
+    }
+    .status {
+      flex:  0 0 80px;
+      display: flex;
+      justify-content: center;
     }
   }
-}
-
-.social {
-  @apply block pt-6 text-gray-700;
-
-  a {
-    @apply p-4 font-medium text-blue-500;
-
-    &:hover {
-      @apply text-blue-700;
-    }
-  }
-}
-
-// highlights
-
-pre[class*="language-"] {
-  color: #f8fafc;
-  @apply max-w-2xl;
-}
-
-.token.class-name,
-.token.function,
-.token.selector,
-.token.selector .class,
-.token.selector.class,
-.token.module,
-.token.tag {
-  color: #f472b6;
-}
-
-.token.attr-name,
-.token.important,
-.token.keyword,
-.token.pseudo-class,
-.token.rule {
-  color: #cbd5e1;
-}
-
-.token.attr-value,
-.token.class,
-.token.property,
-.token.string {
-  color: #7dd3fc;
-}
-
-.token.attr-equals,
-.token.punctuation {
-  color: #64748b;
-}
-
-.token.combinator,
-.token.comment,
-.token.operator {
-  color: #94a3b8;
-}
-
-.language-css .token.function,
-.token.unit {
-  color: #99f6e4;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  word-wrap: normal;
-  -webkit-hyphens: none;
-  hyphens: none;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  text-align: left;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-}
-
-code[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-pre[class*="language-"]::-moz-selection {
-  background: rgba(29, 59, 83, 0.99);
-  text-shadow: none;
-}
-
-code[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-pre[class*="language-"]::selection {
-  background: rgba(29, 59, 83, 0.99);
-  text-shadow: none;
-}
-
-.token.cdata,
-.token.comment,
-.token.prolog {
-  color: #94a3b8;
-  font-style: italic;
-}
-
-.token.punctuation {
-  color: #c792ea;
-}
-
-.token.deleted {
-  color: rgba(239, 83, 80, 0.56);
-  font-style: italic;
-}
-
-.token.keyword,
-.token.operator,
-.token.tag {
-  color: #f472b6;
-}
-
-.token.boolean {
-  color: #ff5874;
-}
-
-.token.number {
-  color: #f78c6c;
-}
-
-.token.builtin,
-.token.char,
-.token.constant,
-.token.function {
-  color: #f472b6;
-}
-
-.token.doctype,
-.token.selector {
-  color: #c792ea;
-  font-style: italic;
-}
-
-.token.attr-name,
-.token.inserted {
-  color: #addb67;
-  font-style: italic;
-}
-
-.language-css .token.string,
-.style .token.string,
-.token.entity,
-.token.string,
-.token.url {
-  color: #7dd3fc;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.class-name {
-  color: #ffcb8b;
-}
-
-.token.important,
-.token.regex,
-.token.variable {
-  color: #d6deeb;
 }
