@@ -25,6 +25,9 @@
               Dashboard
               <p class="dashboard__aside-version">v.01</p>
             </div>
+            <div class="close-burger">
+              <img src="img/close.svg" alt="close">
+            </div>
           </div>
           <ul class="dashboard__aside-list">
             <li>
@@ -83,14 +86,18 @@
 
         <div class="dashboard__aside-bottom">
           <div class="mr-3"><img src="img/evano.png" alt="user"></div>
-          <div>
+          <div class="text">
             Evano
             <div class="text-xs text-[#757575]" > Project Manager</div>
           </div>
         </div>
         </div>
         <div class="dashboard__content">
-          <div class="dashboard__hello">Hello Evano 👋🏼,</div>
+          <div class="dashboard__hello">
+            <div class="burger">
+              <img src="img/burger.svg" alt="menu">
+            </div> 
+            Hello Evano 👋🏼,</div>
           <div class="dashboard__table">
             <div class="dashboard__table-title">
               <div>
@@ -104,79 +111,82 @@
                 <input type="text" placeholder="Search" />
               </div>
             </div>
-            <div class="dashboard__table-head">
-              <div class="name">Customer Name</div>
-              <div class="company">Company</div>
-              <div class="phone">Phone Number</div>
-              <div class="email">Email</div>
-              <div class="country">Country</div>
-              <div class="status">Status</div>
-            </div>
-            <div class="dashboard__table-list">
-              <div class="dashboard__table-item">
-                <div class="name">Jane Cooper</div>
-                <div class="company">Microsoft</div>
-                <div class="phone">(225) 555-0118</div>
-                <div class="email">jane@microsoft.com</div>
-                <div class="country">United States</div>
-                <div class="status status-active">Active</div>
+ 
+            <div class="dashboard__table-overflow">
+              <div class="dashboard__table-head">
+                <div class="name">Customer Name</div>
+                <div class="company">Company</div>
+                <div class="phone">Phone Number</div>
+                <div class="email">Email</div>
+                <div class="country">Country</div>
+                <div class="status">Status</div>
               </div>
-
-              <div class="dashboard__table-item">
-                <div class="name">Floyd Miles</div>
-                <div class="company">Yahoo</div>
-                <div class="phone">(205) 555-0100</div>
-                <div class="email">floyd@yahoo.com</div>
-                <div class="country">Kiribati</div>
-                <div class="status status-inactive">Inactive</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Ronald Richards</div>
-                <div class="company">Adobe</div>
-                <div class="phone">(302) 555-0107</div>
-                <div class="email">ronald@adobe.com</div>
-                <div class="country">Israel</div>
-                <div class="status status-inactive">Inactive</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Marvin McKinney</div>
-                <div class="company">Tesla</div>
-                <div class="phone">(252) 555-0126</div>
-                <div class="email">marvin@tesla.com</div>
-                <div class="country">Iran</div>
-                <div class="status status-active">Active</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Jerome Bell</div>
-                <div class="company">Google</div>
-                <div class="phone">(629) 555-0129</div>
-                <div class="email">jerome@google.com</div>
-                <div class="country">Réunion</div>
-                <div class="status status-active">Active</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Kathryn Murphy</div>
-                <div class="company">Microsoft</div>
-                <div class="phone">(406) 555-0120</div>
-                <div class="email">kathryn@microsoft.com</div>
-                <div class="country">Curaçao</div>
-                <div class="status status-active">Active</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Jacob Jones</div>
-                <div class="company">Yahoo</div>
-                <div class="phone">(208) 555-0112</div>
-                <div class="email">jacob@yahoo.com</div>
-                <div class="country">Brazil</div>
-                <div class="status status-active">Active</div>
-              </div>
-              <div class="dashboard__table-item">
-                <div class="name">Kristin Watson</div>
-                <div class="company">Facebook</div>
-                <div class="phone">(704) 555-0127</div>
-                <div class="email">kristin@facebook.com</div>
-                <div class="country">Åland Islands</div>
-                <div class="status status-inactive">Inactive</div>
+              <div class="dashboard__table-list">
+                <div class="dashboard__table-item">
+                  <div class="name">Jane Cooper</div>
+                  <div class="company">Microsoft</div>
+                  <div class="phone">(225) 555-0118</div>
+                  <div class="email">jane@microsoft.com</div>
+                  <div class="country">United States</div>
+                  <div class="status status-active">Active</div>
+                </div>
+  
+                <div class="dashboard__table-item">
+                  <div class="name">Floyd Miles</div>
+                  <div class="company">Yahoo</div>
+                  <div class="phone">(205) 555-0100</div>
+                  <div class="email">floyd@yahoo.com</div>
+                  <div class="country">Kiribati</div>
+                  <div class="status status-inactive">Inactive</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Ronald Richards</div>
+                  <div class="company">Adobe</div>
+                  <div class="phone">(302) 555-0107</div>
+                  <div class="email">ronald@adobe.com</div>
+                  <div class="country">Israel</div>
+                  <div class="status status-inactive">Inactive</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Marvin McKinney</div>
+                  <div class="company">Tesla</div>
+                  <div class="phone">(252) 555-0126</div>
+                  <div class="email">marvin@tesla.com</div>
+                  <div class="country">Iran</div>
+                  <div class="status status-active">Active</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Jerome Bell</div>
+                  <div class="company">Google</div>
+                  <div class="phone">(629) 555-0129</div>
+                  <div class="email">jerome@google.com</div>
+                  <div class="country">Réunion</div>
+                  <div class="status status-active">Active</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Kathryn Murphy</div>
+                  <div class="company">Microsoft</div>
+                  <div class="phone">(406) 555-0120</div>
+                  <div class="email">kathryn@microsoft.com</div>
+                  <div class="country">Curaçao</div>
+                  <div class="status status-active">Active</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Jacob Jones</div>
+                  <div class="company">Yahoo</div>
+                  <div class="phone">(208) 555-0112</div>
+                  <div class="email">jacob@yahoo.com</div>
+                  <div class="country">Brazil</div>
+                  <div class="status status-active">Active</div>
+                </div>
+                <div class="dashboard__table-item">
+                  <div class="name">Kristin Watson</div>
+                  <div class="company">Facebook</div>
+                  <div class="phone">(704) 555-0127</div>
+                  <div class="email">kristin@facebook.com</div>
+                  <div class="country">Åland Islands</div>
+                  <div class="status status-inactive">Inactive</div>
+                </div>
               </div>
             </div>
             <div class="dashboard__table-bottom">
@@ -207,6 +217,7 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 
     <script src="./js/scripts.js"></script>
   </body>

@@ -27,22 +27,14 @@ body {
     box-shadow: 0px 10px 60px 0px #e2ecf980;
     display: flex;
     flex-direction: column;
-    &.show{
-      left: 0;
-    }
 
     @include mmax(1279) {
       padding: 12px;
-      flex: 0 0 230px;
-      max-width: 230px;
+      flex: 0 0 70px;
+      max-width: 70px;
     }
     @include mmax(991) {
-     position: fixed;
-     left: -100%;
-     bottom: 0;
-     top: 0;
-     overflow: hidden;
-   max-width: 991px;
+     display: none;
     }
 
     &-title {
@@ -52,9 +44,9 @@ body {
       font-weight: 600;
       line-height: 39px;
       margin-bottom: 53px;
-      // @include mmax(1279) {
-      //   display: none;
-      // }
+      @include mmax(1279) {
+        display: none;
+      }
     }
 
     &-version {
@@ -94,12 +86,30 @@ body {
           flex: 1;
         }
 
+        @include mmax(1279) {
+          span,
+          svg {
+            display: none;
+          }
+        }
       }
     }
     &-bottom {
       display: flex;
       align-items: center;
-      margin-top: auto;
+
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      @include mmax(1279) {
+       left: 16px;
+      }
+
+      .text {
+        @include mmax(1279) {
+          display: none;
+        }
+      }
     }
   }
 
@@ -110,19 +120,18 @@ body {
       padding: 12px;
     }
     @include mmax(991) {
-      flex: none;
-      max-width: 100%;
-      width: 100%;
+     flex: none;
+     max-width: 100%;
+     width: 100%;
     }
   }
   &__hello {
     font-size: 24px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
+    text-align: left;
     margin-bottom: 51px;
 
-    @include mmax(1279) {
+    @include mmax(1279){
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 24px;
@@ -138,7 +147,7 @@ body {
     display: flex;
     align-items: center;
 
-    @include mmax(991) {
+    @include mmax(991){
       margin-top: 12px;
     }
     button {
@@ -185,24 +194,23 @@ body {
       align-items: center;
       justify-content: space-between;
 
-      @include mmax(1279) {
+      @include mmax(1279){
         margin-bottom: 24px;
       }
 
-      @include mmax(991) {
-        flex-direction: column;
-        align-items: normal;
+      @include mmax(991){
+      flex-direction: column;
+      align-items: normal;
       }
     }
 
-    &-overflow {
 
-      @include mmax(991){
-        overflow-x: auto;
-      }
+    &-overflow{
+      overflow-x: auto;
     }
 
     &-head {
+      
       display: flex;
       font-weight: 500;
       color: #b5b7c0;
@@ -217,18 +225,21 @@ body {
       @include mmax(1280) {
         padding: 0 20px 16px;
         margin: 0 -20px 16px;
-        min-width: 740px;
+      min-width: 740px;
+
       }
       @include mmax(1280) {
         padding: 0 12px 12px;
         margin: 0 -12px 12px;
-        min-width: 724px;
+      min-width: 724px;
+
       }
     }
 
     &-list {
       margin-bottom: 30px;
       min-width: 700px;
+
     }
 
     &-item {
@@ -255,8 +266,8 @@ body {
       align-items: center;
       justify-content: space-between;
 
-      @include mmax(991) {
-        flex-direction: column-reverse;
+      @include mmax(991){
+        flex-direction:  column-reverse;
         align-items: normal;
         padding-top: 20px;
       }
@@ -291,6 +302,7 @@ body {
       max-width: calc(34% - 80px);
       width: 100%;
       padding-right: 4px;
+      text-overflow: ellipsis;
     }
     .country {
       flex: 0 0 15%;
@@ -324,7 +336,7 @@ body {
   align-items: center;
   margin: 0 -6px;
 
-  @include mmax(991) {
+  @include mmax(991){
     margin-bottom: 12px;
   }
   &__item {
@@ -354,20 +366,5 @@ body {
       background: transparent;
       border: none;
     }
-  }
-}
-
-.burger {
-  display: none;
-  margin-right: 12px;
-  @include mmax(991) {
-    display: block;
-  }
-}
-.close-burger{
-  margin-left: auto;
-  display: none;
-  @include mmax(991) {
-    display: block;
   }
 }
